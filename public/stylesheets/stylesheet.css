@@ -1,0 +1,96 @@
+/* Body */
+body {
+    background-color: #f3f4f6; /* bg-gray-100 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  
+  /* Container */
+  .container {
+    background-color: white; /* bg-white */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* shadow-2xl */
+    border-radius: 1rem; /* rounded-2xl */
+    padding: 2rem; /* p-8 */
+    width: 100%;
+    max-width: 28rem; /* max-w-md = 448px */
+    box-sizing: border-box;
+  }
+  
+  /* Heading */
+  h2 {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700; /* font-bold */
+    text-align: center;
+    margin-bottom: 1.5rem; /* mb-6 */
+    color: #1f2937; /* text-gray-800 */
+  }
+  
+  /* Form */
+  form.space-y-5 > * + * {
+    margin-top: 1.25rem; /* space-y-5 */
+  }
+  
+  /* Input fields */
+  input[type="text"],
+  input[type="password"] {
+    width: 100%; /* w-full */
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    border: 1px solid #d1d5db; /* border-gray-300 */
+    border-radius: 0.5rem; /* rounded-lg */
+    outline: none;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    box-shadow: 0 0 0 2px #60a5fa; /* focus:ring-2 focus:ring-blue-400 */
+    border-color: #60a5fa;
+  }
+  
+  /* Button */
+  button[type="submit"] {
+    width: 100%; /* w-full */
+    background-color: #2563eb; /* bg-blue-600 */
+    color: white;
+    padding: 0.5rem 0; /* py-2 */
+    border-radius: 0.5rem; /* rounded-lg */
+    font-weight: 600; /* font-semibold */
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #1d4ed8; /* hover:bg-blue-700 */
+  }
+  
+  /* Paragraph below form */
+  p {
+    font-size: 0.875rem; /* text-sm */
+    text-align: center;
+    color: #4b5563; /* text-gray-600 */
+    margin-top: 1.5rem; /* mt-6 */
+  }
+  
+  /* Link inside paragraph */
+  p a {
+    color: #3b82f6; /* text-blue-500 */
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-700 flex items-center justify-center min-h-screen">
+    <div class="bg-gray-200 shadow-xl rounded-2xl p-10 w-full max-w-md">
+        <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Create a New Account</h2>
+        <form method="POST" action="/signup" enctype="multipart/form-data" class="space-y-5">
+            <input name="username" type="text" placeholder="Username"
+                   class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+            <input name="password" type="password" placeholder="Password"
+                   class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+            <input name="age" type="number" placeholder="Age"
+                   class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+            <select name="gender" class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                <option value="" disabled selected>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <input name="profileImage" type="file"
+                   class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-gray-50">
+
+            <button type="submit"
+                    class="w-full bg-purple-500 hover:bg-purple-600 text-white py-2 rounded-lg font-semibold">
+                Sign Up
+            </button>
+        </form>
+        <p class="text-sm text-center text-gray-600 mt-6">
+            Already have an account?
+            <a href="/login" class="text-purple-500 hover:underline">Login here</a>
+        </p>
+    </div>
+</body>
+</html>
